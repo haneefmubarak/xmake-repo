@@ -33,7 +33,7 @@ package("tbb")
             add_configs("compiler", {description = "Compiler used to compile tbb." , default = "gcc", type = "string", values = {"gcc", "clang", "icc", "cl", "icl", "[others]"}})
         end
     end
-
+ 
     add_configs("shared", {description = "Build shared library.", default = true, type = "boolean", readonly = true})
 
     on_fetch("fetch")
